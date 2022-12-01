@@ -24,5 +24,5 @@ def last(n):
         sys.stderr.write(invalid)
 
 stmt = last(lastNum)
-print("Last digit of {0} is {1} {2}".format(number, lastNum, stmt))
+print("Last digit of {} is {} {}".format(number, lastNum, stmt), end="")
 print("\n")
