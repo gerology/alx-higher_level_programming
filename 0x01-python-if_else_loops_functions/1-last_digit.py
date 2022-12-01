@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import random
-import sys
 number = random.randint(-10000, 10000)
 
 if number < 0:
@@ -17,7 +16,7 @@ def last(n):
     elif n == 0:
         equalto0 = "and is 0"
         return equalto0
-    elif n < 6 and n != 0:
+    else:
         less6 = "and is less than 6 and not 0"
         return less6
 
