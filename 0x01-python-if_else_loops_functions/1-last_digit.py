@@ -23,6 +23,7 @@ def last(n):
     else:
         sys.stderr.write(invalid)
 
+
 stmt = last(lastNum)
 print("Last digit of {} is {} {}".format(number, lastNum, stmt), end="")
 print("\n")
