@@ -20,8 +20,6 @@ def last(n):
     elif n < 6 and n != 0:
         less6 = "and is less than 6 and not 0"
         return less6
-    else:
-        sys.stderr.write(invalid)
 
 
 stmt = last(lastNum)
