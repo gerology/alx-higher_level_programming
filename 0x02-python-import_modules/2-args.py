@@ -8,9 +8,9 @@ if L == 0:
 elif L == 1:
     print("{} argument:".format(L))
     print("{}: {}".format((L), sys.argv[L]))
-elif L > 1:
+elif L >= 2:
     print("{}: arguments:".format(L))
     arg = 1
-    while L >= arg:
+    while L+1 > arg:
         print("{}: {}".format(arg, sys.argv[arg]))
         arg = arg + 1
