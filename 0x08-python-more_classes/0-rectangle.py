@@ -6,6 +6,6 @@
 
 class Rectangle:
 
-""" empty Rectangle class """
+    """ empty Rectangle class """
 
     pass   # empty block
