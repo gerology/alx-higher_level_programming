@@ -1,19 +1,16 @@
 #!/usr/bin/python3
 
 
-"""
- Rectangle class defines rectangle by width and height based on 0-rectangle.py
-"""
-
-
 class Rectangle:
 
+    """
+ Rectangle class defines rectangle by width and height based on 0-rectangle.py
+"""
     def __init__(self, width=0, height=0):
         """ initializes the data"""
 
         self.__width = width
         self.__height = height
-
 
     def set_width(self, value):
         """ set width value """
