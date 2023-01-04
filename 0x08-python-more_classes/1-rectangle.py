@@ -4,7 +4,9 @@
 class Rectangle:
 
     """
- this class defines rectangle by width and height based on 0-rectangle.py """
+    This class defines rectangle by width
+    and height based on 0-rectangle.py
+    """
 
     def __init__(self, width=0, height=0):
         """ initializes the data """
