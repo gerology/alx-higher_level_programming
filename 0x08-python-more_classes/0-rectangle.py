@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
 
-""" create an empty class called Rectangle """
+""" create an empty class """
 
 
 class Rectangle:
+
+""" empty Rectangle class """
 
     pass   # empty block
