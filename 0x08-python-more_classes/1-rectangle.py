@@ -4,10 +4,10 @@
 class Rectangle:
 
     """
- Rectangle class defines rectangle by width and height based on 0-rectangle.py
-"""
+ this class defines rectangle by width and height based on 0-rectangle.py """
+
     def __init__(self, width=0, height=0):
-        """ initializes the data"""
+        """ initializes the data """
 
         self.__width = width
         self.__height = height
@@ -24,12 +24,12 @@ class Rectangle:
             raise ValueError("with must be >=0")
 
     def get_height(self):
-        """ retrieve the height"""
+        """ retrieve the height """
 
         return self.__height
 
     def set_height(self, value):
-        """ retrieve the value of height"""
+        """ retrieve the value of height """
 
         self.__value = value
 
