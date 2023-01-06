@@ -2,46 +2,49 @@
 
 """
     python module that defines a rectangle class
-    with attributes based on the 0-rectangle file
 """
 
 
 class Rectangle:
 
     '''
-    This class defines rectangle by width
-    and height based on 0-rectangle.py
+    This class defines rectangle
     '''
 
     def __init__(self, width=0, height=0):
-        """ initializes the data """
+        """ initializes new rectangle """
 
         self.__width = width
         self.__height = height
 
+    def get_width(self):
+        """ retieve the width of the rectangle """
+        return self.__width
+
     def set_width(self, value):
-        """ set width value """
+        """ set width value for the rectangle"""
+
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+
+        if value < 0:
+            raise ValueError("with must be >=0")
 
         self.__value = value
 
-        if type(self.__width) != int:
-            raise TypeError("width must be an integer")
-
-        if self.__width < 0:
-            raise ValueError("with must be >=0")
-
     def get_height(self):
-        """ retrieve the height """
+        """ retrieve the height of the rectangle"""
 
         return self.__height
 
     def set_height(self, value):
-        """ retrieve the value of height """
+        """ retrieve the value of height of the rectangle"""
+
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
+
+        if value < 0:
+            raise ValueError("height must be >= 0")
 
         self.__value = value
 
-        if type(self.__height) == int:
-            raise TypeError("height must be an integer")
-
-        if (self.__height) < 0:
-            raise ValueError("height must be >= 0")
