@@ -60,5 +60,5 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return self.__parameter == 0
         else:
-            self.parameter = 2 * (self.__height + self.__width)
-            return self.parameter
+            self.__parameter = 2 * (self.__height + self.__width)
+            return self.__parameter
