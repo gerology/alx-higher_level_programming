@@ -30,7 +30,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("with must be >=0")
 
-        self.__value = value
+        self.__width = value
 
     def get_height(self):
         """ retrieve the height of the rectangle"""
@@ -46,5 +46,5 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
 
-        self.__value = value
+        self.__height = value
 
