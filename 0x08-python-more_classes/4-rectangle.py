@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+
 """ model for a Rectangle """
+
 
 class Rectangle:
     """ defines a rectangle class """
