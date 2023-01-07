@@ -1,4 +1,4 @@
-#!/usr/ rectangle """
+#!/usr/bin/python3
 
 
 class Rectangle:
@@ -71,6 +71,6 @@ class Rectangle:
 
     def __repr__(self):
         """ return the string representation of rectangle"""
-        asterix = "Rectangle(" +str(self.__width)
+        asterix = "Rectangle(" + str(self.__width)
         asterix += ", " + str(self.__height) + ")"
         return (asterix)
