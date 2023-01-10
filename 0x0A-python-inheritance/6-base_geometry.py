@@ -2,6 +2,7 @@
 
 """ define a class 'BaseGeometry' """
 
+
 class BaseGeometry:
     """ representation of BaseGeometry"""
 
