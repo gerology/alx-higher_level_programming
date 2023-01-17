@@ -11,12 +11,13 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """ initialize new base 
+        """ initialize new base
 
             args:
                 id (int): new base identifier
         """
         if id is not None:
             self.id = id
-        __nb_objects += 1
-        self.id = Base.__nb_object
+        else:
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
