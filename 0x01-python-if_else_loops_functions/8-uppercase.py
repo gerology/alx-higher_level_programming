@@ -2,7 +2,7 @@
 def uppercase(str):
     """ This function prints strings in uppercase followed by new line"""
     for x in str:
-        if num >= 97 and num <= 122:
-            num = chr(ord(num) - 32)
-        print("{}".format(num), end="")
+        if ord(x) >= 97 and ord(x) <= 122:
+            x = chr(ord(x) - 32)
+        print("{}".format(x), end="")
     print("")
