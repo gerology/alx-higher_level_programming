@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" define a rectangle """
+""" model for a Rectangle """
 
 
 class Rectangle:
@@ -15,21 +15,18 @@ class Rectangle:
         self.width = width
         self.height = height
 
-    @property
-    def width(self):
-        """ get the width of triangle"""
 
-        return self.__width
 
-    @width.setter
-    def width(self, value):
-        """set width for rectangle """
+
+
+
+
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-
+         
     @property
     def height(self):
         """ get the height for rectangle """
@@ -44,7 +41,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
+    
     def area(self):
         """ get the area of rectangle """
         self.__area = self.__height * self.__width
@@ -59,7 +56,7 @@ class Rectangle:
         for h in range(self.__height):
             [asterix.append('#') for w in range(self.__width)]
             if h != self.__height - 1:
-                asterix.append('\n')
+                asterix.append("\n")
         return ("".join(asterix))
 
     def perimeter(self):
@@ -70,4 +67,9 @@ class Rectangle:
         else:
             self.perimeter = 2 * (self.__height + self.__width)
             return self.perimeter
-Foot
+
+    def __repr__(self):
+        """ return the string representation of rectangle"""
+        asterix = "Rectangle(" + str(self.__width)
+        asterix += ", " + str(self.__height) + ")"
+        return (asterix)
