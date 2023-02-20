@@ -21,4 +21,7 @@ def print_school():
 
 def print_hidden():
     return True
+
+def test_betty():
+    return True
 # okay decompiling hidden_4.pyc
