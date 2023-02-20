@@ -6,4 +6,4 @@ alias = dir(hidden_4)
 
 for name in alias:
     if name[:2] != "__":
-        print("name")
+        print("{}".format(name))

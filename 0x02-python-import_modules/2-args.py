@@ -11,6 +11,6 @@ elif L == 1:
 else:
     print("{}: arguments:".format(L))
     arg = 1
-    while L + 1 > arg:
+    while arg <= L:
         print("{}: {}".format(arg, sys.argv[arg]))
         arg = arg + 1
