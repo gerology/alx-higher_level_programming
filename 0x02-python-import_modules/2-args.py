@@ -9,7 +9,7 @@ elif L == 1:
     print("1 argument:")
     print("{}: {}".format((L), sys.argv[L]))
 else:
-    print("{}: arguments:".format(L))
+    print("{} arguments:".format(L))
     arg = 1
     while arg <= L:
         print("{}: {}".format(arg, sys.argv[arg]))
