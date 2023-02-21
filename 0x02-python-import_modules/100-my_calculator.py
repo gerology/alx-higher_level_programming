@@ -15,4 +15,3 @@ else:
     b = int(sys.argv[3])
     print("{} {} {} = {}".format(a, sys.argv[2], b, opera[sys.argv[2]](a, b)))
     exit(0)
-
