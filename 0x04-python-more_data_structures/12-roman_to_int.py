@@ -11,7 +11,7 @@ def roman_to_int(roman_string):
 
         if (s != (len(roman_string) - 1) and
                 dictn[roman_string[s]] < dictn[roman_string[s + 1]]):
-                N += dictn[roman_string[s]] * -1
+            N += dictn[roman_string[s]] * -1
 
         else:
             N += dictn[roman_string[s]]
