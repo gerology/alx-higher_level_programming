@@ -7,4 +7,3 @@ def search_replace(my_list, search, replace):
         if copy[g] == search:
             copy[g] = replace
     return (copy)
-#[print(list(for i in my_list))]
