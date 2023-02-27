@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def roman_to_int(roman_string):
-    if not isinstance(roman_string, str) or roman_    string is None:
+    if not isinstance(roman_string, str) or roman_string is None:
         return (0)
     dictn = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
     N = 0
@@ -10,7 +10,7 @@ def roman_to_int(roman_string):
             return (0)
 
         if (s != (len(roman_string) - 1) and
-                dictn[roman_string[s]] < dictn[rom    an_string[s + 1]]):
+                dictn[roman_string[s]] < dictn[roman_string[s + 1]]):
                 N += dictn[roman_string[s]] * -1
 
         else:
