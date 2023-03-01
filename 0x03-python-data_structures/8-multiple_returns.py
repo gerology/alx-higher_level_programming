@@ -2,8 +2,9 @@
 
 def multiple_returns(sentence):
     if len(sentence) == 0:
-        sentence[0] = None
-    length = len(sentence)
-    first = sentence[0]
-    tuples = (length, first)
+        return (0, None)
+    else:
+        length = len(sentence)
+        first = sentence[0]
+        tuples = (length, first)
     return (tuples)
