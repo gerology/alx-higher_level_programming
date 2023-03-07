@@ -60,7 +60,7 @@ class Rectangle:
         for h in range(self.__height):
             for w in range(self.__width):
                 rep.append(str((self).print_symbol))
-            if h != self.__height:
+            if h != self.__height - 1:
                 rep.append("\n")
         return ("".join(rep))
 
