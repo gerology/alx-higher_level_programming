@@ -67,4 +67,4 @@ class Rectangle:
         """ return the string representation of rectangle"""
         rap = "Rectangle(" + str(self.__width)
         rap += ", " + str(self.__height) + ")"
-        return (rap) 
+        return (rap)
