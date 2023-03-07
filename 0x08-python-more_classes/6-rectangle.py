@@ -17,6 +17,7 @@ class Rectangle:
     def width(self):
         """retrieve the width"""
         return self.__width
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
@@ -29,9 +30,10 @@ class Rectangle:
     def height(self):
         """ retrieve the height"""
         self.__height = height
+
     @height.setter
     def height(self, value):
-        if  not isinstance(value, int):
+        if not isinstance(value, int):
             raise ValueError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
@@ -45,11 +47,12 @@ class Rectangle:
         """return the area of a rectangle"""
         self.area = self.__width * self.__height
         return self.area
+
     def perimeter(self):
         """ return the perimeter of a rectangle"""
         if self.__width == 0 or self.__height == 0:
             return (0)
-        self.perimeter = (self.__width * 2) + (self.__height *2)
+        self.perimeter = (self.__width * 2) + (self.__height * 2)
         return self. perimeter
 
     def __str__(self):
@@ -64,5 +67,4 @@ class Rectangle:
         """ return the string representation of rectangle"""
         rap = "Rectangle(" + str(self.__width)
         rap += ", " + str(self.__height) + ")"
-        return (rap)
-    
+        return (rap) 
