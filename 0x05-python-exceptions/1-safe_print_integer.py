@@ -11,5 +11,5 @@ def safe_print_integer(value):
     try:
         print("{:d}".format(value))
     except:
-        continu
+        continue
     return True
