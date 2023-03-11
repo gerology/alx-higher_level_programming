@@ -13,7 +13,7 @@ def safe_print_division(a, b):
         sum = 0
         sum = a / b
     except (TypeError, ValueError, ZeroDivisionError):
-        return None
+        sum = None
     finally:
         print("Inside result: {}".format(sum))
         return (sum)
