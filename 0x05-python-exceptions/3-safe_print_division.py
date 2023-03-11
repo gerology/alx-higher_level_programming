@@ -13,8 +13,6 @@ def safe_print_division(a, b):
         sum = 0
         sum = a / b
     except (TypeError, ValueError):
-        pass
-    else:
         return None
     finally:
         print("Inside result: {}".format(sum))
