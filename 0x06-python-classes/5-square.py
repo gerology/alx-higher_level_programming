@@ -7,6 +7,7 @@ class Square:
     def __init__(self, size=0):
         """ create a new instance """
         self.__size = size
+
     @property
     def size(self):
         """ retrieve size"""
@@ -24,6 +25,7 @@ class Square:
     def area(self):
         """ return the area of the square"""
         return (self.__size * self.__size)
+
     def my_print(self):
         """ print to stdout with '#' """
         if self.__size == 0:
