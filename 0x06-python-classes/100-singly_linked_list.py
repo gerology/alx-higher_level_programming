@@ -6,8 +6,8 @@ class Node:
     """ creates a new Node"""
     def __init__(self, data, next_node=None):
         """ new instance of a Node"""
-        self.__data = data
-        self.__next_node = next_node
+        self.data = data
+        self.next_node = next_node
 
     @property
     def data(self):
