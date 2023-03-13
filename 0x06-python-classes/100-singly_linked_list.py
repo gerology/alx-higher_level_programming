@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" define classes for singly linked list"""
+
 
 class Node:
     """ creates a new Node"""

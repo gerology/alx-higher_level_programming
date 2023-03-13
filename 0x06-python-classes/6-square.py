@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+""" define a class square """
+
 
 class Square:
-
+    """ defines a new square """
     def __init__(self, size=0, position=(0, 0)):
         """ create a new instance """
         self.__size = size

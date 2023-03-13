@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+""" a python class that does exactly the same as the cose provided"""
 import math
 
 
