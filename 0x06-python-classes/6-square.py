@@ -41,6 +41,7 @@ class Square:
         """ print to stdout with '#' """
         if self.__size == 0:
             print("")
+            return
 
         [print("") for i in range(0, self.__position[1])]
         for c in range(0, self.__size):

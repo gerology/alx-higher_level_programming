@@ -15,10 +15,11 @@ class Node:
         return (self.__data)
 
     @data.setter
-    def dat(self, value):
+    def data(self, value):
         """ set the value for data"""
         if not isinstance(value, int):
             raise TypeError("data must be an integer")
+        self.__data = value
 
     @property
     def next_node(self):
