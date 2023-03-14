@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const v = process.arv;
-const x = length(v);
+const x = v.length;;
 if (x < 1) {
 console.log("No argument");
 } else if (x === 1){
