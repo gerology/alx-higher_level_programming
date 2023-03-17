@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 if (process.argv.length <= 3) {
   return 0;
 } else {
