@@ -6,5 +6,5 @@ if (process.argv.length <= 3) {
   const val = process.argv.map(Number)
     .slice(2, process.argv.length)
     .sort((a, b) => a - b);
-    console.log(val[val.length - 2]);
+  console.log(val[val.length - 2]);
 }
