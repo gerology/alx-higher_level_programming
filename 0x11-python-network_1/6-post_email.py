@@ -12,4 +12,4 @@ if __name__ == "__main__":
     dat = {"email": sys.argv[2]}
 
     sett = requests.post(url, data=dat)
-    print("Email: {}".format(sett.text))
+    print("{}".format(sett.text))
