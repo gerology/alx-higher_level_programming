@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" send request and display the value of the variable X-Request-Id in the response body """
+""" send request and display the value of the 
+    variable X-Request-Id in the response body 
+"""
 
 import sys
 import requests
