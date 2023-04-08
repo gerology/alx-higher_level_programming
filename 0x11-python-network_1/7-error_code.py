@@ -11,6 +11,6 @@ if __name__ == "__main__":
 
     sett = request.get(url)
     if sett.status_code >= 400:
-        print("Error code: {}".format(sett.raise_for_status()))
+        print("Error code: {}".format(sett.raise_for_status))
     else:
         print(sett.text)
