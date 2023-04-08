@@ -7,6 +7,6 @@ import sys
 if __name__ == "__main__":
     url = sys.argv[1]
 
-    sett = urllib.request.Request("url")
+    sett = urllib.request.Request(url)
     with urllib.request.urlopen(sett) as fyl:
         print(dict(fyl.headers).get("X-Request-Id"))
