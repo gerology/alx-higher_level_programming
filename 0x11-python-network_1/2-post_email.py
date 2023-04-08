@@ -11,7 +11,7 @@ import sys
 if __name__ == "__main__":
     url = sys.argv[1]
     val = {"email": sys.argv[2]}
-    dat = urllib.parse(val).encode('ascii')
+    dat = urllib.parse(val).encode("ascii")
     
     sett = urllib.request.Request(url, dat)
     with urllib.request.urlopen(sett) as fyl:
