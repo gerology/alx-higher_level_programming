@@ -14,6 +14,6 @@ if __name__ == "__main__":
     dat = urllib.parse(val).encode('ascii')
     
     sett = urllib.request.Request(url, dat)
-    with urllib.request.url(sett) as fyl:
+    with urllib.request.urlopen(sett) as fyl:
         print(fyl.read().decode("utf-8"))
 
