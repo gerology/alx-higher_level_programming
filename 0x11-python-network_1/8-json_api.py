@@ -25,5 +25,7 @@ if __name__ == "__main__":
         check_json = sett.json()
         if check_json == {}:
             print("No result")
-    else:
-        print("[{}] {}".format(check_json.get("id"), check_json.get("name")))
+        else:
+            print("[{}] {}".format(check_json.get("id"), check_json.get("name")))
+    except ValueError:
+        print("Not a valid JSON")
