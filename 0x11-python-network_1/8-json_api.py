@@ -2,6 +2,10 @@
 """ take a letter and send post request
     to http://0.0.0.0:5000/search_user
     using the letter as parameter
+
+    Usage: ./8-json_api.py <letter>
+  - The letter is sent as the value of the variable `q`.
+  - If no letter is provided, sends `q=""`
 """
 
 import requests
