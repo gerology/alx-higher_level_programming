@@ -13,4 +13,4 @@ if __name__ == "__main__":
     if sett.status_code >= 400:
         print("Error code: {}".format(sett.status_code))
     else:
-        print(sett.text)
+        print("Regular request")
