@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """ display the body of response for request sent to URL"""
 
