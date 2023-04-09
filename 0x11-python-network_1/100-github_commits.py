@@ -11,6 +11,6 @@ if __name__ == "__main__":
     comit = sett.json()
     try:
         for k in range(10):
-            print("{}: {}".format(comit[i].get("sha"), comit[i].get("commit").get("author").get("name")))
+            print("{}: {}".format(comit[k].get("sha"), comit[k].get("commit").get("author").get("name")))
     except IndexError:
         pass
