@@ -22,10 +22,10 @@ if __name__ == "__main__":
 
     sett = requests.post(url, data=letter)
     try:
-        check_json = sett.json()
-        if check_json == {}:
+        cj = sett.json()
+        if cj == {}:
             print("No result")
         else:
-            print("[{}] {}".format(check_json.get("id"), check_json.get("name")))
+            print("[{}] {}".format(cj.get("id"), cj.get("name")))
     except ValueError:
         print("Not a valid JSON")
