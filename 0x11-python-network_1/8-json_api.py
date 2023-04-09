@@ -6,14 +6,14 @@ import sys
 
 
 if __name__ == "__main__":
-    letter = {"q": sys.argv[1]}
     url = "http://0.0.0.0:5000/search_user"
     
     if len(sys.argv) == 1:
-        sett = requests.post(url, data="")
+        letter = {"q": ""}
     else:
-        sett = requests.post(url, q=letter)
+        letter = {"q": sys.argv[1]}
 
+    sett = requests.post(url, data=letter)
     try:
         check_json = sett.json()
         if check_json == {}:
