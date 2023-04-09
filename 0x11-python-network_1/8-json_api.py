@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-""" take a letter and send post request to http://0.0.0.0:5000/search_user using the letter as parameter """
+""" take a letter and send post request
+    to http://0.0.0.0:5000/search_user
+    using the letter as parameter
+"""
 
 import requests
 import sys
@@ -7,7 +10,7 @@ import sys
 
 if __name__ == "__main__":
     url = "http://0.0.0.0:5000/search_user"
-    
+
     if len(sys.argv) == 1:
         letter = {"q": ""}
     else:
