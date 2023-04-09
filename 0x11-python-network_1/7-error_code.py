@@ -7,7 +7,7 @@ import requests
 
 
 if __name__ == "__main__":
-    url = sys.argv[1]
+    url = "http://0.0.0.0:5000/search_user"
 
     sett = requests.get(url)
     if sett.status_code >= 400:
