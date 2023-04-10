@@ -6,7 +6,8 @@ import sys
 
 
 if __name__ == "__main__":
-    url = "https://api.github.com/repos/{}/{}/commits".format(sys.argv[2],
+    url = "https://api.github.com/repos/{}/{}/commits".format(
+            sys.argv[2],
             sys.argv[1])
     sett = requests.get(url)
     comit = sett.json()
