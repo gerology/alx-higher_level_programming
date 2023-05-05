@@ -3,8 +3,8 @@ $.get("https://swapi-api.alx-tools.com/api/films/?format=json", function(muvi) {
 	movititle = movie.map(function(mov) {
 		return mov.title;
 	});
-	$.each(movtitle, function(title) {
-		let lsit = $("<li></li>"").text(title);
+	$.each(movititle, function(title) {
+		let lsit = $("<li></li>").text(title);
 	});
 	$("#list_movies").append(lsit);
 });
