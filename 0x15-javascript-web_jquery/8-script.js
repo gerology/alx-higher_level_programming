@@ -1,3 +1,4 @@
-$.get("https://swapi-api.alx-tools.com/api/films/?format=json", function('title') {
-	$('#list_movies').append(title);
+$.get("https://swapi-api.alx-tools.com/api/films/?format=json", function('movie') {
+	let movieTitle = movie.title;
+	$('#list_movies').text(movieTitle);
 });
