@@ -5,6 +5,6 @@ $.get("https://swapi-api.alx-tools.com/api/films/?format=json", function(muvi) {
 	});
 	$.each(movititle, function(title) {
 		let lsit = $("<li></li>").text(title);
+		$("#list_movies").append(lsit);
 	});
-	$("#list_movies").append(lsit);
 });
