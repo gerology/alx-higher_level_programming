@@ -9,6 +9,6 @@ $('document').ready(function () {
 
 	$('#clear_list').on('click', function () {
 		/*while ($('.my_list')) {
-		/*};
+		*/};
 	});
 });
