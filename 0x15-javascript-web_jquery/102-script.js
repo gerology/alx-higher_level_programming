@@ -4,7 +4,7 @@ $('document').ready(function () {
 	$("INPUT#btn_translate").on("click", function () {
 		$.get(url + langcode, function (data) {
 			let trans = data.hello;
-			$("DIV#hello").text(trans);
+			$("DIV#hello").html(trans);
 		});
 	});
 });
