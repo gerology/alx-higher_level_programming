@@ -4,13 +4,12 @@ $('document').ready(function () {
 	});
 
 	$('#remove_item').on('click', function () {
-		$('#my_list').remove('<li>Item</li>')
+		$('.my_list').last().remove();
 	});
 
 	$('#clear_list').on('click', function () {
-		let cont = my_list.firstChild;
-		while (cont) {
-			$('my_list').removeChild(cont);
+		while ($('.my_list')) {
+			$('my_list').removeChild(.my_list.firstChild);
 		}
 	});
 });
