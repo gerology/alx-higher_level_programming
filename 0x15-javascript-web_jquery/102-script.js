@@ -3,8 +3,7 @@ $('document').ready(function () {
 	const url = "https://www.fourtonfish.com/hellosalut/?";
 	$("INPUT#btn_translate").on("click", function () {
 		$.get(url + langcode, function (data) {
-			let trans = data.hello;
-			$("DIV#hello").html(trans);
+			$("DIV#hello").html(data.hello);
 		});
 	});
 });
