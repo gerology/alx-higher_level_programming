@@ -1,0 +1,16 @@
+$('document').ready(function () {
+	$('#add_item').on('click', function () {
+		$('.my_list').append('<li>Item</li>');
+	});
+
+	$('#remove_item').on('click', function () {
+		$('#my_list').remove('<li>Item</li>')
+	});
+
+	$('#clear_list').on('click', function () {
+		let cont = my_list.firstChild;
+		while (cont) {
+			$('my_list').removeChild(cont);
+		}
+	});
+});
